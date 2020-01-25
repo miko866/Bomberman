@@ -1,6 +1,6 @@
 package server;
 
-public class BomberServer {
+public class ServerRuntime {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,6 @@
-package server.observerPattern;
+package server.observers;
 
 public interface Observer {
+
+    public void updateObserver();
 }

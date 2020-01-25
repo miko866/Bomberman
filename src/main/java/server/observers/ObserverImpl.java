@@ -1,4 +1,10 @@
-package server.observerPattern;
+package server.observers;
 
-public class ObserverImpl {
+public class ObserverImpl implements Observer{
+
+    @Override
+    public void updateObserver() {
+
+    }
+
 }
