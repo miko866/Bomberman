@@ -6,6 +6,7 @@ import javax.swing.*;
 
 public class Bomberman {
 
+    // Game canvas board
     private static final int WIDTH = 1000, HEIGHT = 650;
 
     private JFrame frame;
@@ -17,9 +18,11 @@ public class Bomberman {
         new Bomberman();
     }
 
+    /**
+     * Create Bomberman Game with swing
+     */
     public Bomberman() {
         frame = new JFrame("Bomberman");
-
 
         panel = new BombermanPanel(this);
         mouse = new Mouse(this);
@@ -36,20 +39,31 @@ public class Bomberman {
         thread = new BombermanThread(panel);
         thread.start();
 
-
         frame.setVisible(true);
 
 
     }
 
+    /**
+     *
+     * @return frame
+     */
     public JFrame getFrame() {
         return frame;
     }
 
+    /**
+     *
+     * @return thread
+     */
     public BombermanThread getThread() {
         return thread;
     }
 
+    /**
+     *
+     * @return mouse
+     */
     public Mouse getMouse() {
         return mouse;
     }

@@ -3,7 +3,6 @@ package client;
 public class BombermanThread extends Thread {
 
     private long MIN_FRAME_DURATION= 1000000000 / 60;
-
     private BombermanPanel panel;
     private long passedFrameTime, lastFrameTime, delta;
     private int framePerSecond;
@@ -12,6 +11,9 @@ public class BombermanThread extends Thread {
         this.panel= panel;
     }
 
+    /**
+     * Start App with check thread
+     */
     @Override
     public synchronized void run(){
         while(true) {
@@ -50,10 +52,18 @@ public class BombermanThread extends Thread {
         }
     }
 
+    /**
+     *
+     * @return delta
+     */
     public long getDelta() {
         return delta;
     }
 
+    /**
+     * Delat in sekunds
+     * @return delta
+     */
     public double getDeltaInS() {
         return delta / 1000000000D;
     }

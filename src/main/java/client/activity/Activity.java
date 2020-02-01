@@ -13,6 +13,10 @@ public class Activity {
     protected List<GUIComponent> components = new ArrayList<>();
 
 
+    /**
+     * Loading game with pretty animation
+     * Use thread
+     */
     public final void load() {
         loaded = false;
         if (loadAsync) {
@@ -39,18 +43,29 @@ public class Activity {
         return finish;
     }
 
+    /**
+     * Update canvas
+     * @param screenWidth
+     * @param screenHeight
+     */
     public void update(int screenWidth, int screenHeight) {
         for (GUIComponent component : components)
-            component.revalidate(screenWidth, screenHeight
-
-            );
+            component.revalidate(screenWidth, screenHeight);
     }
 
+    /**
+     * Render canvas
+     * @param g
+     */
     public void render(Graphics2D g) {
         for (GUIComponent component : components)
             component.render(g);
     }
 
+    /**
+     *
+     * @return components
+     */
     public List<GUIComponent> getComponents() {
         return components;
     }

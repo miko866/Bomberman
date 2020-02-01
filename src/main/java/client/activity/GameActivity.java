@@ -4,6 +4,7 @@ import client.BombermanPanel;
 import client.gui.GUIButton;
 import client.gui.GUIComponent;
 
+import javax.swing.*;
 import java.awt.*;
 
 public class GameActivity extends Activity {
@@ -12,6 +13,11 @@ public class GameActivity extends Activity {
     private GUIButton back;
     private GUIScore scoreRed, scoreOrange, scoreGreen, scoreBlue;
     private GUIGameCanvas canvas;
+    private static final int HEIGHT = 19;
+    private static final int WIDTH = 19;
+    private static final int PREF_WIDTH = 600;
+    private static final int PREF_HEIGHT = 600;
+
 
     public GameActivity() {
         toolbar = new GUIComponent(0, 50) {
@@ -53,6 +59,7 @@ public class GameActivity extends Activity {
                 screenHeight += 50;
                 super.revalidate(screenWidth,screenHeight);
             }
+
         };
 
         components.add(toolbar);
@@ -61,6 +68,29 @@ public class GameActivity extends Activity {
         components.add(scoreOrange);
         components.add(scoreGreen);
         components.add(scoreBlue);
+
+        JPanel mainPanel = new JPanel(new GridLayout(HEIGHT, WIDTH));
+        mainPanel.setPreferredSize(new Dimension(PREF_WIDTH, PREF_HEIGHT));
+
+        for (int i = 0; i < HEIGHT; i++) {
+            for (int j = 0; j < WIDTH; j++) {
+                if (i == 0 || i == HEIGHT - 1 || j == 0 || j == HEIGHT - 1 || (i % 2) == 0 && (j % 2) == 0) {
+                    String text = String.format("");
+                    JLabel label = new JLabel(text, SwingConstants.CENTER);
+                    label.setBackground(Color.gray);
+                    label.setOpaque(true);
+                    mainPanel.add(label);
+                } else {
+                    String text = String.format("");
+                    JLabel label = new JLabel(text, SwingConstants.CENTER);
+                    label.setBackground(Color.green);
+                    label.setOpaque(true);
+                    mainPanel.add(label);
+                }
+            }
+        }
+        JOptionPane.showMessageDialog(null, mainPanel, "Bomberman", JOptionPane.PLAIN_MESSAGE);
+
     }
 
     private void finish() {
