@@ -2,24 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf723634-b917-4c8d-aff4-add0bdb9b746" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/JSONEntDecryption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/ObserverInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/ObserverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/PlayerUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/PlaygroundUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/TestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/ValueValidationUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/bomberman.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/PlayLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/PlayLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/JSONEntDecryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/JSONEntDecryption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/observer/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/ObserverInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/observer/ObserverInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/observer/ObserverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/PlayLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/validation/PlayLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/PlaygroundUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/validation/PlaygroundUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/ServerRuntime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ServerRuntime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/observers/Observer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/observers/ObserverImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/observers/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/update/PlayerUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/update/PlaygroundUpdate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/update/ValueValidationUpdate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/observer/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/ValueValidationUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/validation/ValueValidationUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/EncryptedSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/EncryptedSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/Encryption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/Encryption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/EncryptionPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/EncryptionPayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/EncryptionPayloadImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/EncryptionPayloadImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/JsonEncryption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/JsonEncryption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/ProxyInterfaces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/ProxyInterfaces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/SocketImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/SocketImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/SocketInterfaces.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/SocketInterfaces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Bomberman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Bomberman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/BombermanPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/BombermanPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/BombermanThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/BombermanThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/Activity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/Activity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/GUIGameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/GUIGameCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/GUIScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/GUIScore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/GameActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/GameActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/GameActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/GameActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/GameActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/GameActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/MainMenuActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/MainMenuActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/activity/MainMenuActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/activity/MainMenuActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/gui/GUIButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/gui/GUIButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/gui/GUIComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/gui/GUIComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/gui/GUIMainMenuButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/gui/GUIMainMenuButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/interact/Interactor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/interact/Interactor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/interact/Mouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/interact/Mouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Observer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/ObserverInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/ObserverTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/PlayLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/PlaygroundUpdate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/ServerRuntime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/ServerRuntime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/ValueValidationUpdate.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +76,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1XCoSHWsYzwNNahMGcmUm5yizBY" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -78,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ObserverTest">
     <configuration name="Bomberman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Bomberman" />
       <module name="client" />
@@ -92,11 +120,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ObserverTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.observer.ObserverTest" />
+      <module name="bomberman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.observer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerRuntime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.ServerRuntime" />
+      <module name="bomberman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.observer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServerClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.TestServerClient" />
+      <module name="bomberman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.observer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ObserverTest" />
+        <item itemvalue="Application.TestServerClient" />
+        <item itemvalue="Application.ServerRuntime" />
         <item itemvalue="Application.Bomberman" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -118,11 +198,25 @@
       <workItem from="1580312699035" duration="4914000" />
       <workItem from="1580399092884" duration="7754000" />
       <workItem from="1580543585946" duration="4170000" />
+      <workItem from="1580559439173" duration="6787000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>
