@@ -1,4 +1,4 @@
-package server;
+package server.validation;
 
 public class PlaygroundUpdate {
 }
