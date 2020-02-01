@@ -1,4 +1,4 @@
-package server.update;
+package server;
 
 public class PlaygroundUpdate {
 }
