@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/Bomberman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Bomberman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/BombermanPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/BombermanPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/BombermanThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/BombermanThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/activity/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/activity/Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/activity/GUIGameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/activity/GUIGameCanvas.java" afterDir="false" />
@@ -38,8 +37,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/client/BombermanPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1751">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="-101">
+              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <folding>
+                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1179#1180#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -348,12 +353,12 @@
       <workItem from="1580275449101" duration="1232000" />
       <workItem from="1580312699035" duration="4914000" />
       <workItem from="1580399092884" duration="7754000" />
-      <workItem from="1580543585946" duration="19160000" />
+      <workItem from="1580543585946" duration="19366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60054000" />
+    <option name="totallyTimeSpent" value="60260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
@@ -846,8 +851,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/client/BombermanPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1751">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="-101">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
