@@ -19,19 +19,23 @@ public class Bomberman {
 
     public Bomberman() {
         frame = new JFrame("Bomberman");
-        frame.setSize(WIDTH, HEIGHT);
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
+
 
         panel = new BombermanPanel(this);
         mouse = new Mouse(this);
         frame.addMouseListener(mouse);
         frame.addMouseMotionListener(mouse);
         frame.setContentPane(panel);
+        frame.pack();
+
+        frame.setSize(WIDTH, HEIGHT);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(true);
 
         thread = new BombermanThread(panel);
         thread.start();
+
 
         frame.setVisible(true);
 

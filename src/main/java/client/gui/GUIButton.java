@@ -11,6 +11,7 @@ public class GUIButton extends GUIComponent {
     private Color textColor = Color.WHITE;
     private int textX, textY;
     private int verticalTextAling = CENTER, horizontalTextAling = CENTER;
+    private Runnable onClickListener;
 
     public GUIButton(int width, int height, String label) {
         super(width, height);
@@ -43,6 +44,14 @@ public class GUIButton extends GUIComponent {
 
     public void setHorizontalTextAling(int horizontalTextAling) {
         this.horizontalTextAling = horizontalTextAling;
+    }
+
+    public Runnable getOnClickListener() {
+        return onClickListener;
+    }
+
+    public void setOnClickListener(Runnable onClickListener) {
+        this.onClickListener = onClickListener;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package client.activity;
 
+import client.BombermanPanel;
 import client.gui.GUIButton;
 import client.gui.GUIComponent;
 import client.gui.GUIMainMenuButton;
@@ -11,6 +12,13 @@ public class MainMenuActivity extends Activity {
     public MainMenuActivity() {
         GUIMainMenuButton start = new GUIMainMenuButton("Start Game");
         start.setY(-110);
+        start.setOnClickListener(new Runnable() {
+            @Override
+            public void run() {
+                MainMenuActivity.this.finish = true;
+                BombermanPanel.startActivity(GameActivity.class);
+            }
+        });
 
         GUIButton multi = new GUIMainMenuButton("Multi Players");
         multi.setY(-50);

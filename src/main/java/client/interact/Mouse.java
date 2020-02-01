@@ -16,6 +16,7 @@ public class Mouse implements MouseListener, MouseMotionListener {
     private Bomberman bomberman;
     private List<GUIComponent> interactors = new ArrayList<>();
     private List<GUIComponent> hovered =  new ArrayList<>();
+    private List<GUIComponent> clicked = new ArrayList<>();
 
     public Mouse(Bomberman bomberman) {
         this.bomberman = bomberman;
@@ -56,12 +57,20 @@ public class Mouse implements MouseListener, MouseMotionListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
+        for(GUIComponent component : hovered) {
+            clicked.add(component);
+            ((Interactor) component).press();
+        }
 
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        for(GUIComponent component : hovered) {
+            if(clicked.contains(component))
+                ((Interactor) component).click();
+        }
+        clicked.clear();
     }
 
     @Override

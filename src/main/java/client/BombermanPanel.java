@@ -1,6 +1,7 @@
 package client;
 
 import client.activity.Activity;
+import client.activity.GameActivity;
 import client.activity.MainMenuActivity;
 
 import java.awt.*;
@@ -16,20 +17,24 @@ public class BombermanPanel extends Container {
     private static final List<Activity> ACTIVITIES = new ArrayList<>();
     static {
         ACTIVITIES.add(new MainMenuActivity());
+        ACTIVITIES.add(new GameActivity());
     }
 
     private Bomberman bomberman;
-    private Activity running, start = getActivity(MainMenuActivity.class);
+    private static Activity running, start = getActivity(MainMenuActivity.class);
 
     private double x = Math.PI, duration = 1D, time;
     private int size = 8, space = 8, amount = 14;
-    private Color highColor = Color.GREEN, backColor = new Color(180,180, 180);
 
     public BombermanPanel(Bomberman bomberman){
         this.bomberman = bomberman;
     }
 
-    public Activity getActivity(Class<? extends Activity> clazz) {
+    public static void startActivity(Class<? extends Activity> clazz) {
+        start = getActivity(clazz);
+    }
+
+    public static Activity getActivity(Class<? extends Activity> clazz) {
         for (Activity activity : ACTIVITIES) {
             if (activity.getClass() == clazz)
                 return activity;
@@ -71,6 +76,7 @@ public class BombermanPanel extends Container {
             g2d.setColor(new Color(0,0,0, a));
             g2d.fillRect(0, 0, getWidth(), getHeight());
 
+            Color highColor = new Color(255, 255, 255, a), backColor = new Color(180,180, 180, a);
             time += bomberman.getThread().getDeltaInS();
             for(int i = 0; i < amount; i++){
                 if (Math.floor(time * amount) % amount  == i) {
@@ -84,7 +90,7 @@ public class BombermanPanel extends Container {
 
 
             g2d.setFont(DEFAULT_FONT);
-            g2d.setColor(Color.WHITE);
+            g2d.setColor(highColor);
             g2d.drawString("Loading new Game", getWidth() / 2 -g2d.getFontMetrics(DEFAULT_FONT).stringWidth("Loading new Game") / 2, getHeight() - 90 + DEFAULT_FONT.getSize());
         }
         bomberman.getThread().nowait();

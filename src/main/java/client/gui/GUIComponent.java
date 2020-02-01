@@ -1,6 +1,7 @@
 package client.gui;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class GUIComponent {
 
@@ -9,6 +10,8 @@ public class GUIComponent {
     private int x, y, width, height;
     protected int renderX, renderY, renderedWidth, renderedHeight;
     private Color background, borderColor;
+    private BufferedImage backgroundImage;
+    private int imgX, imgY,  imgWidth, imgHeight;
     private boolean border;
     private double scale = 1;
     private int verticalAlign = TOP, horizontalAlign = LEFT;
@@ -70,6 +73,46 @@ public class GUIComponent {
 
     public void setBackground(Color background) {
         this.background = background;
+    }
+
+    public BufferedImage getBackgroundImage() {
+        return backgroundImage;
+    }
+
+    public void setBackground(BufferedImage background){
+        this.backgroundImage = background;
+    }
+
+    public int getImgX() {
+        return imgX;
+    }
+
+    public void setImgX(int imgX) {
+        this.imgX = imgX;
+    }
+
+    public int getImgY() {
+        return imgY;
+    }
+
+    public void setImgY(int imgY) {
+        this.imgY = imgY;
+    }
+
+    public int getImgWidth() {
+        return imgWidth;
+    }
+
+    public void setImgWidth(int imgWidth) {
+        this.imgWidth = imgWidth;
+    }
+
+    public int getImgHeight() {
+        return imgHeight;
+    }
+
+    public void setImgHeight(int imgHeight) {
+        this.imgHeight = imgHeight;
     }
 
     public Color getBorderColor() {
@@ -147,14 +190,20 @@ public class GUIComponent {
     }
 
     public void render(Graphics2D g) {
+        g.setClip(new Rectangle(renderX, renderY, renderedWidth, renderedHeight));
         if (!border) {
             g.setColor(background);
             g.fillRect(renderX, renderY, renderedWidth, renderedHeight);
+            if(backgroundImage != null)
+                g.drawImage(backgroundImage, renderX + imgX,renderY + imgY, imgWidth, imgHeight, null);
         } else {
             g.setColor(background);
             g.fillRect(renderX+1, renderY+1, renderedWidth-1, renderedHeight-1);
             g.setColor(borderColor);
             g.drawRect(renderX, renderY, renderedWidth-1, renderedHeight-1);
+            if(backgroundImage != null)
+                g.drawImage(backgroundImage, renderX + imgX,renderY + imgY, imgWidth, imgHeight, null);
         }
+        g.setClip(null);
     }
 }
