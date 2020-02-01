@@ -2,13 +2,13 @@ package client.activity;
 
 import client.BombermanPanel;
 import client.gui.GUIButton;
-import client.gui.GUIComponent;
 import client.gui.GUIMainMenuButton;
-
-import java.awt.*;
 
 public class MainMenuActivity extends Activity {
 
+    /**
+     * Define menu buttons
+     */
     public MainMenuActivity() {
         GUIMainMenuButton start = new GUIMainMenuButton("Start Game");
         start.setY(-110);
@@ -20,8 +20,8 @@ public class MainMenuActivity extends Activity {
             }
         });
 
-        GUIButton multi = new GUIMainMenuButton("Multi Players");
-        multi.setY(-50);
+        GUIButton score = new GUIMainMenuButton("Score");
+        score.setY(-50);
 
         GUIButton options = new GUIMainMenuButton( "Options");
         options.setY(10);
@@ -30,7 +30,7 @@ public class MainMenuActivity extends Activity {
         leave.setY(70);
 
         components.add(start);
-        components.add(multi);
+        components.add(score);
         components.add(options);
         components.add(leave);
 

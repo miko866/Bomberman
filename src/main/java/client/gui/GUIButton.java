@@ -54,6 +54,11 @@ public class GUIButton extends GUIComponent {
         this.onClickListener = onClickListener;
     }
 
+    /**
+     * Create text for button with size
+     * @param screenWidth
+     * @param screenHeight
+     */
     @Override
     @SuppressWarnings("deprecation")
     public void revalidate(int screenWidth, int screenHeight) {
@@ -67,6 +72,10 @@ public class GUIButton extends GUIComponent {
         }
     }
 
+    /**
+     *
+     * @param g
+     */
     @Override
     public void render(Graphics2D g) {
         super.render(g);

@@ -163,6 +163,11 @@ public class GUIComponent {
         return renderedHeight;
     }
 
+    /**
+     *
+     * @param screenWidth
+     * @param screenHeight
+     */
     public void revalidate(int screenWidth, int screenHeight) {
         renderX = x;
         renderY = y;
@@ -189,6 +194,10 @@ public class GUIComponent {
         renderY -= motionY / 2;
     }
 
+    /**
+     * Render menu buttons
+     * @param g
+     */
     public void render(Graphics2D g) {
         g.setClip(new Rectangle(renderX, renderY, renderedWidth, renderedHeight));
         if (!border) {
@@ -197,6 +206,8 @@ public class GUIComponent {
             if(backgroundImage != null)
                 g.drawImage(backgroundImage, renderX + imgX,renderY + imgY, imgWidth, imgHeight, null);
         } else {
+
+
             g.setColor(background);
             g.fillRect(renderX+1, renderY+1, renderedWidth-1, renderedHeight-1);
             g.setColor(borderColor);
